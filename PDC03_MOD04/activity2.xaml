@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD04.activity2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="T1 Main Roster 2022"
+                   TextColor="DarkRed"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="EmployeeView"
+                      ItemsSource="{Binding Employees}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ImageCell ImageSource="{Binding Image}"  Text="{Binding DisplayName}" TextColor="Black" Detail="{Binding position}" DetailColor="Gray"/>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

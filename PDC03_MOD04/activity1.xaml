@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD04.activity1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Patch 12.10 S-Tier Junglers"
+                   TextColor="CadetBlue"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Wukong</x:String>
+                        <x:String>Volibear</x:String>
+                        <x:String>Trundle</x:String>
+                        <x:String>Sejuani</x:String>
+                        <x:String>Nocturne</x:String>
+                        <x:String>Diana</x:String>
+
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

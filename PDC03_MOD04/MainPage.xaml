@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC03_MOD04.MainPage">
+
+    <StackLayout>
+
+        <Frame BackgroundColor="SteelBlue" Padding="24" CornerRadius="0">
+            <Label Text="Module 04 - List and Navigations" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="FloralWhite" FontSize="36"/>
+        </Frame>
+
+
+        <Button Text="Activity1 - ListView" Clicked="ActivityPage1"
+                 TextColor="White"
+                 BackgroundColor="CadetBlue"/>
+
+        <Button Text="Activity2 - ListView-ItemSource" Clicked="ActivityPage2"
+                 TextColor="White"
+                 BackgroundColor="DarkRed"/>
+        <Button Text="Activity3 - CollectionView-ItemSource" Clicked="ActivityPage3"
+                 TextColor="White"
+                 BackgroundColor="SandyBrown"/>
+
+    </StackLayout>
+
+</ContentPage>
